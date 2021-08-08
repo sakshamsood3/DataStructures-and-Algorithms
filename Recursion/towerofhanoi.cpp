@@ -16,6 +16,6 @@ int main()
     cin >> num;
     //Tower A=1,Tower B=2,Tower C=3
     towerofhanoi(num, 1, 2, 3);
-    cout << "Congrats you managed to move all the disks!";
+    cout << "Congrats you managed to move all the disks! ";
     return 0;
 }
