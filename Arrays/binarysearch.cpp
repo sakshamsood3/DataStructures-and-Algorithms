@@ -4,9 +4,9 @@ int binarysearch(int arr[], int key, int n)
 {
     int s = 0;
     int e = n - 1;
-    int mid = (s + e) / 2;
     while (s <= e)
     {
+         int mid = (s + e) / 2;
         if (arr[mid] == key)
         {
             return mid;
