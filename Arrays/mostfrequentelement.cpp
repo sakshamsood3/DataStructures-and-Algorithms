@@ -38,5 +38,6 @@ int main()
         cin >> arr[i];
     }
     most_frequent(arr, n);
+    cout << 6 % 5 << endl;
     return 0;
 }

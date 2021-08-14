@@ -23,7 +23,7 @@ public:
     }
     void insert(int index, int element)
     {
-        if (index >= 0 && index <= length)
+        if (index >= 0 && index < length)
         {
             for (int i = length; i > index; i--)
             {
@@ -58,6 +58,17 @@ public:
             display();
         }
     }
+    void insert_sortedarray(int element)
+    {
+        int i = length;
+        for (i; p[i] > element; i--)
+        {
+            p[i] = p[i - 1];
+        }
+        length++;
+        p[i + 1] = element;
+        display();
+    }
 };
 int main()
 {
@@ -84,9 +95,12 @@ int main()
     cout << "Enter an element to insert and the index ";
     cin >> ele >> index;
     arr.insert(index, ele);
-    cout << "Enter an element to delete ";
+    cout << "Enter an index of the element to be deleted ";
     cin >> ele;
     arr.delete_element(ele);
+    cout << "Enter an element to add in a sorted array ";
+    cin >> ele;
+    arr.insert_sortedarray(ele);
     delete[] arr.p;
     return 0;
 }
