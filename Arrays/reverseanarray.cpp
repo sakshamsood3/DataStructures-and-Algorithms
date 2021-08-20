@@ -23,15 +23,15 @@ void rev_arraybetter(int a[], int n)
 }
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6};
+    int arr[] = {1, 2, 3, 4, 5, 6, 8};
     rev_arraybetter(arr, 6); //both methods work we can use any one
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 7; i++)
     {
         cout << arr[i] << " ";
     }
     cout << endl;
-    rev_array(arr, 6);
-    for (int i = 0; i < 6; i++)
+    rev_array(arr, 7);
+    for (int i = 0; i < 7; i++)
     {
         cout << arr[i] << " ";
     }
