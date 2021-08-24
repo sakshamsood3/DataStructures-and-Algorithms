@@ -64,7 +64,7 @@ int main()
             m1.set(i, j, x);
         }
     }
-    cout << "Displaying the Toeplitz Matrix" << endl;
+    cout << "Displaying the Toeplitz Matrix " << endl;
     m1.display();
     return 0;
 }
