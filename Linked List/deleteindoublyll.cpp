@@ -78,7 +78,7 @@ int main()
     Display(first);
     Delete(1);
     Delete(4);
-    cout << "The linked list after inserting elements is " << endl;
+    cout << "The linked list after deleting elements is " << endl;
     Display(first);
     return 0;
 }
