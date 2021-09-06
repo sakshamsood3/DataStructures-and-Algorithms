@@ -44,11 +44,11 @@ int Delete(struct Node *p, int index)
 {
     struct Node *q;
     int x;
-    if (index < 0 || index > Length(head))
+    if (index < 1 || index > Length(head))
     {
         return -1;
     }
-    if (index == 0)
+    if (index == 1)
     {
         while (p->next != head)
         {
@@ -87,7 +87,7 @@ int main()
     int arr[] = {2, 43, 45, 35, 1};
     create(arr, 5);
     Display(head);
-    cout << Delete(head, 0) << endl;
-    cout << Delete(head, 3) << endl;
+    cout << Delete(head, 1) << endl;
+    cout << Delete(head, 4) << endl;
     Display(head);
 }
