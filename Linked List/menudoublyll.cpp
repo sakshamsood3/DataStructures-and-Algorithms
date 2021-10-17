@@ -4,8 +4,8 @@ class Node
 {
 public:
     int data;
-    struct Node *prev;
-    struct Node *next;
+    Node *prev;
+    Node *next;
 };
 class DoublyLinkedList
 {
