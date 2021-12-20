@@ -8,7 +8,7 @@ public:
     int data;
     int height;
 };
-class BST
+class AVL
 {
 public:
     Node *root;
@@ -228,7 +228,7 @@ public:
 int main()
 {
     Node *temp;
-    BST t;
+    AVL t;
     t.root = t.RInsert(t.root, 10);
     t.RInsert(t.root, 30);
     t.RInsert(t.root, 20);
