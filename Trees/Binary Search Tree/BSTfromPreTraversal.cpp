@@ -292,6 +292,5 @@ int main()
     b.createFromPreorder(pre, n);
     b.Inorder(b.getRoot());
     cout << endl;
-
     return 0;
 }
