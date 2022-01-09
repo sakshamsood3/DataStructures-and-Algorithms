@@ -45,7 +45,7 @@ void IMergeSort(int A[], int n)
     }
     if (p / 2 < n)
     {
-        Merge(A, 0, p / 2, n - 1);
+        Merge(A, 0, (p / 2) - 1, n - 1);
     }
 }
 int main()
